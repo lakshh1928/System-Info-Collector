@@ -23,6 +23,6 @@
     - name: Fetch report back to control machine
       fetch:
         src: /tmp/System-Info-Collector/Report
-        dest: ./sysreports/Report_{{ inventory_hostname }}
+        dest: /home/lakshya/sysreports/Report_{{ inventory_hostname }}
         flat: yes
 
