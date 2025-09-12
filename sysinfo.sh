@@ -1,12 +1,17 @@
 #!/bin/bash
 
 
-echo "system report"
+echo "---System Report---"
+echo " "
 echo "Host - $(hostname)"
+echo " "
 echo "Date - $(date)"
-echo "Memory - "
+echo " "
+echo "~~~Memory~~~"
 free -h
-echo "Disk Usage- "
+echo " "
+echo "~~~Disk Usage~~~"
 df -h
+echo " "
 echo "User - "
 who
