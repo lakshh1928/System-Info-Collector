@@ -20,3 +20,9 @@
       args:
         chdir: /tmp/System-Info-Collector
 
+    - name: Fetch report back to control machine
+      fetch:
+        src: /tmp/System-Info-Collector/Report
+        dest: ./sysreports/Report_{{ inventory_hostname }}
+        flat: yes
+
