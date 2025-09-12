@@ -1,0 +1,22 @@
+- name: execute script
+  hosts: all
+  become: true
+  tasks:
+    - name: Clone repo
+      shell: |
+        if [ ! -d "System-Info-Collector" ]; then
+          git clone https://github.com/lakshh1928/System-Info-Collector.git
+        fi
+      args:
+        chdir: /tmp
+
+    - name: Change Permission
+      shell: chmod +x sysinfo.sh
+      args:
+        chdir: /tmp/System-Info-Collector
+
+    - name: Execute Script
+      shell: ./sysinfo.sh >> Report
+      args:
+        chdir: /tmp/System-Info-Collector
+
