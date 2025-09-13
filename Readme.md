@@ -1,4 +1,4 @@
-#*System Info Collector*
+#System Info Collector
 
 A simple project to collect system information from remote machines using Ansible and a custom shell script (sysinfo.sh).
 
