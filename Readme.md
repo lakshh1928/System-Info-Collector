@@ -5,4 +5,4 @@ A simple project to collect system information from remote machines using Ansibl
 # The admin can run a playbook to: 
 - Copy the sysinfo.sh script from the repo to a target machine.
 - Execute the script remotely.
-- Print system information (CPU, memory, disk, uptime, etc.) of the user’s machine.
+- Print system information (CPU, memory, disk, uptime, etc.) of the user’s machine. In there system.
